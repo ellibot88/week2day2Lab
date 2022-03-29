@@ -1,0 +1,52 @@
+JavaScript Objects
+
+obj = {
+
+test = 'Elliott',
+height = 75,
+weight = 175,
+
+
+}
+
+KEY VALUE PAIRS: every item has a key (or label) and a value — think of this as a mini table with column headers and row values
+Keys/properties can be strings or not (it can be 'Name' = "Elliott" OR Name = "Elliott")
+Value can be accessed from the object using dot notation (.) or square brackets ([])
+
+console.log(cat.name) //prints 'Louie'
+console.log(cat['age']) //prints 17
+
+Destructuring values from objects (put curly brackets around the variable and set the variable name to the key in the object)
+const {age: freidaAge} = dog
+const {age: buddyAge} = dog2
+
+Loop over properties in an object
+for(let attribute in cat){
+    console.log(`The cat's ${attribute} is ${dog[attribute]})
+}
+
+You can add new properties to an object using dot notation or square brackets (cat.nickname = 'louieCatLeonard')
+You can reassign properties using the same syntax as above (just add the name of the key)
+Remove property by using delete obj.property (delete cat.age)
+
+
+JavaScript Classes
+A class is a mini factory that knows how to make objects of a single type
+Let's you define a blueprint for all future objects of this type
+Properties = data
+Method = function
+
+class Dog {
+ constructor(name, color)
+
+}
+
+//Extending classes
+//Child class inherits properties and methods from parent class
+class Puppy extends Dog {
+
+    constructor(name, color, trainingLevel)
+        super(name, color)
+
+}
+
